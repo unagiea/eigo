@@ -75,9 +75,9 @@
         let ue = document.getElementById("ue");
         let st = document.getElementById("sita");
         let se = document.getElementById("seikai");
-        const en = ["ordinary","satisfy","possible","fact","resercher","believe","increase","a variety of ~","wide","apply","below","above","match","check ... out","championship","amaze","amazing","uncomfortable","well-known","costom-made","functional","stylish","opinin","support","be satisfied with","more and more"];
-        const ja = ["ふつうの","まんぞくさせる","かのうな","じじつ","けんきゅうしゃ","しんじる","ふやす","さまざまなしゅるいの","はばのひろい","あてはまる","したに","うえに","しあい","をちょうさする","せんしゅけん","おどろかせる","おどろくべき","ふかいにさせる","ゆうめいな","ちゅうもんでつくった","じつようてきな","おしゃれな","いけん","をしえんする","にまんぞくする","ますます"];
-        const jaFH = ["普通の","満足させる","可能な","事実","研究者","信じる","増やす","様々な種類の","幅の広い","当てはまる","下に","上に","試合","を調査する","選手権","驚かせる","驚くべき","不快にさせる","有名な","注文で作った","実用的な","おしゃれな","意見","を支援する","に満足する","ますます"];
+        const en = ["ordinary","satisfy","possible","fact","resercher","believe","increase","a variety of ~","wide","apply","below","above","match","check ... out","championship","amaze","amazing","uncomfortable","well-known","costom-made","functional","stylish","opinin","support","be satisfied with","more and more","less","strict","quite","either","actually","pop","not always ~","not only A but also B","so A that B"];
+        const ja = ["ふつうの","まんぞくさせる","かのうな","じじつ","けんきゅうしゃ","しんじる","ふやす","さまざまなしゅるいの","はばのひろい","あてはまる","したに","うえに","しあい","をちょうさする","せんしゅけん","おどろかせる","おどろくべき","ふかいにさせる","ゆうめいな","ちゅうもんでつくった","じつようてきな","おしゃれな","いけん","をしえんする","にまんぞくする","ますます","よりすくない","きびしい","かなり","もまた","じつは","たいしゅうてきな","いつも～とはぎらない","Aだけでなく、Bもまた","とてもAなのでBだ"];
+        const jaFH = ["普通の","満足させる","可能な","事実","研究者","信じる","増やす","様々な種類の","幅の広い","当てはまる","下に","上に","試合","を調査する","選手権","驚かせる","驚くべき","不快にさせる","有名な","注文で作った","実用的な","おしゃれな","意見","を支援する","に満足する","ますます","より少ない","厳しい","かなり","もまた","実は","大衆的な","いつも～とはぎらない","Aだけでなく、Bもまた","とてもAなのでBだ"];
         let already = [""];
         let kouho = Array.from(document.getElementsByClassName("a"));
         let a = "en";
@@ -168,7 +168,7 @@
         
         function tugi(){
             if(en.length == 0){
-                txt.textContent = "おめでとうございます。すべての単語を正解しました。"
+                txt.textContent = "おめでとうございます。すべて終了しました。"
             }
             ue.textContent = txt.textContent;
             if(a == "en"){
